@@ -1,0 +1,604 @@
+:root{
+    --color-1 : #2e7d32;
+    --color-2 : #8bc34a;
+    --back-color : #fafafa;
+    --text-color : rgb(0, 0, 0);
+    --btn-color : #ff9800;
+    --headings : 'Poppins', sans-serif;
+    --body : 'Open Sans', sans-serif;
+    
+}
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin : 0;
+    padding : 0;
+    font-family: var(--body);
+    background-color: var(--back-color);
+    color : var(--text-color);
+}
+nav{
+    display: none;
+}
+.header{
+    position:absolute;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    width:100%;
+    justify-content: space-between;
+    padding: 0.7em 1.3em;
+    z-index: 10;
+
+}
+.h1{
+    font-size: 1.8rem;
+    font-family: var(--headings);
+    background: linear-gradient(90deg,var(--color-1),var(--color-2));
+    background-clip: text;
+    color:transparent;
+}
+.btn{
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--btn-color);
+    padding: 0.7em 1.4em;
+    border-radius: 2em;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+.btn:hover,.btn1:hover{
+    background: linear-gradient(90deg,var(--color-1),var(--color-2));
+    
+    
+}
+#hero{
+    position:relative;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100%;
+}
+#hero img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter:brightness(70%);
+}
+.cont{
+    position: absolute;
+    top:25%;
+    left:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 0 1em;
+}
+.hh1{
+    font-size: 2.1em;
+    font-family: var(--headings);
+    background: linear-gradient(90deg,var(--color-2),var(--btn-color));
+    background-clip: text;
+    color:transparent;
+    
+}
+.para{
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    width:95%;
+    margin-bottom: 2.5em;
+}
+.btns{
+    display:flex;
+    align-items: center;
+    gap:2em;
+}
+.btn1{
+    text-decoration: none;
+    color:black;
+    background-color: var(--btn-color);
+    padding: 0.8em 1.8em;
+    font-weight:600;
+    border-radius: 2em;
+    transition: transform 0.3s ease;
+}
+.btn2{
+    text-decoration: none;
+    color:white;
+    padding: 0.8em 1.8em;
+    border-radius: 2em;
+    border: 2px solid lightgrey;
+    overflow: hidden;
+    position:relative;
+}
+.btn2 span{
+    display:inline-block;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    
+}
+.btn2:hover span{
+    animation: slide 0.6s ease ;
+
+} 
+@keyframes slide {
+    to{
+        transform:translateX(40px);
+        opacity:0;
+    }
+    
+}
+#how-it-works{
+    margin:2em;
+    padding: 2em 0;
+}
+.align{
+    text-align: center;
+    
+}
+.para1{
+    font-size:1.2rem;
+    font-weight:700;
+}
+.how{
+    font-family: var(--headings),"sans-serif";
+    font-size:2.5em;
+    font-weight: 600;
+}
+.parag{
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.container1{
+    margin-top: 3em;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.material-symbols-outlined{
+    font-size: 4rem;
+}
+h3{
+    font-family: var(--headings);
+    font-weight: 500;
+    font-size: 2em;
+}
+.parag1{
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+
+}
+#order{
+    padding:3em 1em;
+}
+#order h4{
+    font-family: var(--headings),"sans-serif";
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.3;
+}
+#order p{
+    text-align: center;
+    font-size: 1.15rem;
+    line-height: 1.3;
+    font-weight: 400;
+    margin-bottom: 2.5em;
+}
+.ord-btns{
+    display:flex;
+    gap:2em;
+    justify-content: center;
+    align-items: center;
+}
+.ord-btn1{
+    text-decoration: none;
+    color: var(--back-color);
+    background-color: var(--btn-color);
+    padding: 0.8em 1.8em;
+    border-radius: 2em;
+}
+.ord-btn2{
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: lightgrey;
+    padding: 0.8em 1.8em;
+    border-radius: 2em;
+
+}
+.solution{
+    display:flex;
+    justify-content: center;
+}
+#order img{
+    width:95%;
+    border-radius: 25px;
+    margin-top: 2.5em;
+    
+    
+}
+#menu{
+    margin: 4.5em 0;
+}
+.h5{
+    font-family: var(--headings),"sans-serif";
+    font-size: 2.2rem;
+    
+}
+.paragra{
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 3em;
+}
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.group {
+    display: flex;
+    gap: 1.4em;
+    padding-right: 1em;
+    animation: slider 15s linear infinite;
+}
+
+.slider img {
+    width: 450px;
+    height: auto;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+@keyframes slider {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.h6{
+    font-family: var(--headings),sans-serif;
+    font-size : 2rem;
+    margin: 2rem 0 3rem 0;
+    
+}
+.sus-para{
+    letter-spacing: 0.3px;
+}
+ul {
+    margin : 3rem 0;
+}
+.li0,.li{
+    list-style: none;
+    margin-top: 1rem;
+}
+.li0{
+    display: none;
+}
+.li {
+    font-weight: 600;
+}
+.li1::before{
+    content: "🌱";
+}
+.li2::before{
+    content: "🚲";
+}
+.li3::before{
+    content: "🥬";
+}
+.img-cont{
+    padding: 0 1em;
+}
+.sus-img{
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+footer{
+    margin-top: 3em;
+    padding: 3em 1.5em;
+    background-color: black;
+    color:white;
+}
+.foot{
+    margin-bottom: 2em;
+}
+.soclink{
+    display:flex;
+    gap : 1.2em;
+}
+.social a {
+    text-decoration: none;
+    color:var(--back-color);
+    font-size: 1.3em;
+}
+.social p{
+    text-indent: 10px;
+}
+.fa-brands:hover{
+    color:var(--color-2);
+    scale:1.1;
+
+} 
+@keyframes appear{
+        from{
+            opacity: 0;
+            scale: 0.5;
+        }
+        to{
+            opacity:1;
+            scale : 1;
+        }
+    }
+
+.anim{
+    opacity : 1;
+    scale: 1;
+    animation : appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    
+}
+@keyframes appear2{
+    from{
+        opacity : 0;
+        transform : translate(-50%);
+    }
+    to {
+        opacity : 1;
+        transform : translate(0%);
+    }
+}
+.anim2{
+    animation : appear2  linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@media (max-width: 400px){
+    .header{
+        padding: 0.5em 1em;
+    }
+    .h1{
+    font-size: 1.4rem;
+    }
+    .btn{
+        padding: 0.5em 1.1em;
+    }
+    .btn1,.btn2{
+        padding: 0.6em 1.3em;
+    }
+    .how{
+        font-size: 1.8em;
+    }
+    .para1{
+        font-size: 1rem;
+    }
+    .parag{
+        font-size: 0.95rem;
+    }
+    .material-symbols-outlined{
+        font-size: 2.8rem;
+    }
+    h3{
+        font-size: 1.4em;
+    }
+    #order{
+    padding:1.8em 0.7em;
+    }
+    #order h4{
+        font-size: 2em;
+    }
+    #order p{
+        font-size: 1rem;
+    }
+    .ord-btn1,.ord-btn2{
+        padding:0.7em 1.3em;
+    }
+    .slider img {
+    width: 350px;
+    }
+    .h6{
+        font-size: 1.8rem;
+    }
+
+}
+@media (min-width:768px){
+    .header{
+        padding: 1.4em 1.8em;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .h1{
+        margin-top:0.4em;
+        font-size: 2rem;
+    }
+    
+    .cont{
+        left:8%;
+    }
+    .hh1{
+    font-size: 2.5em;
+    }
+    .para{
+        font-size: 1.4rem;
+        width:80%;
+    }
+    .btn1,.btn2{
+        padding: 0.7em 1.7em;
+        font-size: 1.2rem;
+    }
+    .btn{
+        padding: 0.8em 1.6em;
+    }
+    .work{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1.5em;
+    }
+    .parag{
+        font-size: 1.3rem;
+        line-height: 0.9;
+        letter-spacing: 0;
+    }
+    h3{
+        font-size: 1.6em;
+        text-align: center;
+        line-height: 1.3;
+        letter-spacing: 0.7px;
+    }
+    .special{
+        width:90%;
+    }
+    #order{
+        display:grid;
+        grid-template-columns: 2fr 3fr;
+        gap:1.5em;
+    }
+    #order h4{
+        font-size: 1.8em;
+        text-align: left;
+    }
+    #order p{
+        font-size: 1rem;
+        text-align: left;
+    }
+    .ord-btns{
+        gap:1.2em;
+    }
+    .ord-btn1,.ord-btn2{
+        padding: 0.9em 1.5em;
+        border-radius: 1.8em;
+    }
+    .h6{
+        margin: 2rem 0 1.5rem 0;
+
+    }
+    .res{
+        display:grid;
+        grid-template-columns: 1fr 1.6fr;
+        gap: 1.5em;
+        margin-top: 4em;
+    }
+    .li{
+        font-size: 1.05rem;
+    }
+    .foot{
+        text-align: center;
+    }
+    .addr{
+        display:grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        place-items: center;
+    }
+    .social{
+        margin-top: -0.9em;
+    }
+    .terms{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:1em;
+    }
+    .rights{
+        text-align: center;
+    } 
+
+}
+@media (min-width:1024px){
+    .header{
+        padding: 1.1em 1.4em;
+
+    }
+    nav{
+        display:flex;
+    }
+    .ul{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap:3.5em;
+        padding: 0.7em 1em;
+    }
+    .ul li{
+        list-style: none;
+    }
+    .ul a{
+        text-decoration: none;
+        color:var(--back-color);
+        font-size: 1.25rem;
+        font-weight: 500;
+        font-family: var(--headings);
+        letter-spacing: 0.7px;
+    }
+    .cont{
+        top:31%;
+        left:25%;
+    }
+    .btn1,.btn2{
+        padding: 0.8em 2em;
+        font-size: 1.1rem;
+        
+    }
+    #order{
+        display:grid;
+        grid-template-columns: 1.5fr 2.5fr;
+        gap:1.5em;
+    }
+    .responsive{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #order h4{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    #order p{
+    font-size: 1.25rem;
+    }
+    .h5{
+        font-size: 2.5rem;
+    }
+    .paragra{
+    font-size: 1.25rem;
+    }
+    #sustainability p:first-of-type{
+        font-size:1.1rem ;
+
+    }
+    .h6{
+        font-size: 2.5rem;
+    }
+    .sus-para{
+        font-size: 1.2rem;
+        letter-spacing: 0.15px;
+    }
+    .res{
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+    }
+    .li{
+        font-size: 1.15rem;
+    }
+    .li0{
+        display: block;
+        margin-bottom: 2em;
+        font-size: 1.1rem;
+    }
+}
